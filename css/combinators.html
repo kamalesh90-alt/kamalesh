@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandfather >p{
+            background-color: red;
+            color: aquamarine;
+            text-align: center;
+        }
+        .grandfather +p{
+            background-color: aquamarine;
+            font-size: 30px;
+            font-weight: 700;
+            border: 2px solid red
+        }
+        .grandfather~p{
+            font-size: 60px;
+
+            
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grandfather">
+        <p>child -1</p>
+      <p>child -2</p>
+      <p>child -3</p>
+      <div><p>grand son</p></div>
+      <p>child -4</p>
+ 
+    </div>
+    <p> nearest friend</p>
+    <p>outside friend</p>
+    <p> outer friend</p>
+      
+      
+      
+      
+
+    
+</body>
+</html>

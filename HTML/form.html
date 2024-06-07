@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get">
+      <h1>form</h1>
+      <div>
+        <label for="fname"> enter your full name</label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="enter your name"
+          minlength="0"
+          maxlength="100"
+          pattern="{e}"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mypass">enter your password</label>
+        <input
+          type="text"
+          name="mypass"
+          id="mypass"
+          placeholder="enter your password"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="my mail">enter your email</label>
+        <input
+          type="text"
+          name="my mail"
+          id="my mail"
+          placeholder="xyz@gmail.com"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="my contact">enter your contact</label>
+        <input
+          type="text"
+          name="my contact"
+          id="my contact"
+          placeholder="babu"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="phone no">enter the phone no</label>
+        <input
+          type="text"
+          name="phone no"
+          id="phone no"
+          pattern="^[0-9]{9-11}&"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dob">select dob</label>
+        <input type="date" name="dob" id="dob" required />
+      </div>
+      <br />
+      <div>
+        <label for="age">select age</label>
+        <input type="number" name="age" id="age" min="18" max="70" required />
+      </div>
+      <br />
+      <div>
+        <label for="">select your gender</label>
+        <input type="radio" name="gender" id="gender" value="male" />male
+        <input type="radio" name="gender" id="gender" value="female" />female
+        <input
+          type="radio"
+          name="gender"
+          id="gender"
+          value="transgender"
+        />transgender
+      </div>
+      <br />
+      <div>
+        <label for="education">select your education</label>
+        <input type="checkbox" name="education" id="education" value="hsc" />hsc
+        <input
+          type="checkbox"
+          name="education"
+          id="education"
+          value="sslc"
+        />sslc
+        <input type="checkbox" name="education" id="education" value="be" />be
+        <input type="checkbox" name="education" id="education" value="pg" />pg
+      </div>
+      <br />
+      <div>
+        <label for="course">select your course</label>
+        <select name="course" id="course" required>
+          <option value="ece">ece</option>
+          <option value="react">react</option>
+          <option value="jss">jss</option>
+        </select>
+      </div>
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>

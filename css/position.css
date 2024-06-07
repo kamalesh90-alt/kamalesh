@@ -1,0 +1,31 @@
+.images{
+    background-color: red;
+    border: 3px;
+    height: 149px;
+    border-radius: 1059px;
+    vertical-align: middle;
+    margin: 8px;
+}
+header{
+    background-color: blue;
+    border-bottom: 3px solid black;
+}
+span{
+    font-size: 50px;
+    background-color: bisque;
+    text-shadow: 6px 3px 4px blue
+    
+}
+p{
+    border: 2px solid black;
+    vertical-align: initial;
+    width: 100px;
+}
+
+
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
