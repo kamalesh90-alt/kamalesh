@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changeing Image</title>
+</head>
+<body>
+
+    <img src="../images/download rahul.webp"img-1" alt="preet" height="300px" width="300px"> <br>
+    <strong id="imgName">PREET</strong><br>
+    <button type="button" onclick="changeImage()"> change Image </button>
+    
+
+<br><br><br>
+    <img src="../images/download (9) modal1.jpeg" id="img-2" alt="sam"  height="300px" width="300px"><br>
+    <strong id="img-name">SAM</strong><br>
+
+    <button type="button"  onclick="chImg(`ASH`)">ASH</button>
+    <button type="button"  onclick="chImg(`Charizad`)">Charizad</button>
+    <button type="button"  onclick="chImg(`Blastoise`)">Blastoise</button>
+    <button type="button"  onclick="chImg(`charmendal`)">charmendal</button>
+    <button type="button"  onclick="chImg(`meo`)">meo</button>
+
+
+    <script>
+
+        function chImg(name) {
+            console.log(name);
+
+            if(name == "Charizad"){
+                document.getElementById("img-2").src = "new-image.jpg";
+                document.getElementById("img-name").innerHTML = "Charizard";
+            }else if(name == "ASH"){
+                document.getElementById("img-2").src = "../assect/image/Ash.jfif";
+                document.getElementById("img-name").innerHTML = "ASH";
+            }else if(name == "Blastoise"){
+                document.getElementById("img-2").src = "../assect/image/Blastoise.jfif";
+                document.getElementById("img-name").innerHTML = "Blastoise";
+            }else if(name == "charmendal"){
+                document.getElementById("img-2").src = "../assect/image/charmendal.jfif";
+                document.getElementById("img-name").innerHTML = "charmendal";
+            }else if(name == "meo"){
+                document.getElementById("img-2").src = "../assect/image/meo.jfif";
+                document.getElementById("img-name").innerHTML = "meo";
+            }
+
+        }
+
+
+
+
+        function changeImage(){
+
+            let name = document.getElementById("imgName").innerHTML;
+
+            if(name == "sam"){
+
+                document.getElementById("img-1").src = "../images/download (9) modal1.jpeg";
+                document.getElementById("imgName").innerHTML = "sam";
+
+            }else{
+
+                document.getElementById("img-1").src = "../images/download rahul.webp";
+                document.getElementById("imgName").innerHTML = "rahul";
+            }
+        }
+
+    </script>
+</body>
+</html>
