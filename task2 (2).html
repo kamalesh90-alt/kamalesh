@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changeing Image</title>
+</head>
+<body>
+
+    <img src="../Desktop/KAMALESH/assests/images/images (3).jfif" id="img-1" alt="preet" height="300px" width="300px"> <br>
+    <strong id="imgName">PREET</strong><br>
+    <button type="button" onclick="changeImage()"> change Image </button>
+    
+
+<br><br><br>
+    <img src="../Desktop/KAMALESH/imdd/download (9) modal1.jpeg" id="img-2" alt="sam"  height="300px" width="300px"><br>
+    <strong id="img-name">SAM</strong><br>
+
+    <button type="button"  onclick="chImg(`ORTAN`)">ORTAN</button>
+    <button type="button"  onclick="chImg(`RANDY`)">RANDY</button>
+    <button type="button"  onclick="chImg(`CENA`)">CENA</button>
+    <button type="button"  onclick="chImg(`EARINGS`)">EARINGS</button>
+    <button type="button"  onclick="chImg(`LEO`)">LEO</button>
+
+
+    <script>
+
+        function chImg(name) {
+            console.log(name);
+
+            if(name == "Charizad"){
+                document.getElementById("img-2").src="../Desktop/KAMALESH/imdd/download (1).jpeg"
+                document.getElementById("img-name").innerHTML = "ORTAN";
+            }else if(name == "ASH"){
+                document.getElementById("img-2").src = "../Desktop/KAMALESH/imdd/download (5).jpeg";
+                document.getElementById("img-name").innerHTML = "RANDY";
+            }else if(name == "Blastoise"){
+                document.getElementById("img-2").src = "../Desktop/KAMALESH/imdd/download (6).jpeg";
+                document.getElementById("img-name").innerHTML = "CENA";
+            }else if(name == "charmendal"){
+                document.getElementById("img-2").src = "../Desktop/KAMALESH/imdd/download (8).jpeg";
+                document.getElementById("img-name").innerHTML = "EARINGS";
+            }else if(name == "meo"){
+                document.getElementById("img-2").src = "../Desktop/KAMALESH/imdd/download (9) modal1.jpeg";
+                document.getElementById("img-name").innerHTML = "LEO";
+            }
+
+        }
+
+
+
+
+        function changeImage(){
+
+            let name = document.getElementById("imgName").innerHTML;
+
+            if(name == "sam"){
+
+                document.getElementById("img-1").src = "../Desktop/KAMALESH/assests/images/download (1).jfif";
+                document.getElementById("imgName").innerHTML = "PREET";
+
+            }else{
+
+                document.getElementById("img-1").src = "../Desktop/KAMALESH/assests/images/images (3).jfif";
+                document.getElementById("imgName").innerHTML = "sam";
+            }
+        }
+
+    </script>
+</body>
+</html>
