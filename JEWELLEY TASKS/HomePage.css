@@ -1,0 +1,43 @@
+
+.carousel-inner img{
+   
+   padding: 50px;   
+}.model
+{
+    border: solid;
+    overflow: auto;
+    margin: 40px;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+.text
+{
+    font-size: 20px;
+    color: rgb(184, 75, 90);
+    margin: auto;
+    text-align: center;
+}
+.model-img
+{
+    float: left;
+    height:400px;
+    width: 400px;border: solid;
+    margin: 10px;border-style: none;
+}
+.promises
+{
+    border: solid;
+    overflow: auto;
+    margin: 40px;
+    box-sizing: border-box;
+    border-style: none;
+}
+.promise-img
+{
+    float: left;
+    height:300px;
+    width: 300px;border: solid;
+    margin: 10px;border-style: none;
+    
+}

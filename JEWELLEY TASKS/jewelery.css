@@ -1,0 +1,12 @@
+.container
+{
+overflow: auto;
+flex: auto;
+}
+.container img
+{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    
+}
