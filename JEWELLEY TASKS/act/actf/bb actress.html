@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Image</title>
+  </head>
+  <body>
+    <img
+      src="../images/download.jpeg"
+      alt="roger"
+      id="jewelleryImage"
+    /><br />
+    <strong id="imgname">roger</strong><br />
+    <button type="button" onclick="change('one')" id="one">riya</button>
+    <button type="button" onclick="change('two')" id="two">luffy</button>
+    <button type="button" onclick="change('three')" id="three">preet</button>
+    <button type="button" onclick="change('four')" id="four">pooja</button>
+    <button type="button" onclick="change('five')" id="five">tamu</button>
+    <button type="button" onclick="change('six')" id="six">franky</button>
+
+    <script>
+      function change(val) {
+        let imgElement = document.getElementById("jewelleryImage");
+        let nameElement = document.getElementById("imgname");
+
+        switch (val) {
+          case "one":
+            imgElement.src = "../images/download (9)jj.jpeg";
+            nameElement.innerHTML = "riya";
+            break;
+          case "two":
+            imgElement.src = "../images/images (5) modal5.jpeg";
+            nameElement.innerHTML = "luffy";
+            break;
+          case "three":
+            imgElement.src = "../images/images (5) modals3.jpeg";
+            nameElement.innerHTML = "preet";
+            break;
+          case "four":
+            imgElement.src = "../images/Mahatma-Gandhi,_studio,_1931.jpg";
+            nameElement.innerHTML = "pooja";
+            break;
+          case "five":
+            imgElement.src = "../images/download.jpeg";
+            nameElement.innerHTML = "tamu";
+            break;
+         
+        }
+      }
+    </script>
+  </body>
+</html>
